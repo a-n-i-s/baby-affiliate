@@ -10,6 +10,8 @@ class Product(models.Model):
     affiliate_url = models.URLField("affiliate url", max_length=200)
     image_url = models.URLField("image url", max_length=200)
     tags = models.ManyToManyField("Tag", verbose_name=("tags"))
+    created_at = models.DateTimeField("created_at", auto_now_add=True)
+    updated_at = models.DateTimeField("updated_at", auto_now=True)
 
 
     def __str__(self):
@@ -21,3 +23,6 @@ class Product(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(name="name", max_length=50)
+
+    def __str__(self):
+        return self.name
