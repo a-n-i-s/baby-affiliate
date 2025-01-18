@@ -1,0 +1,14 @@
+
+.mycard{
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(4,36, 2, .4);
+    cursor: pointer;
+    
+
+}
+.mycard:hover{
+
+    color: inherit;
+    transform: scale(1.02);
+}

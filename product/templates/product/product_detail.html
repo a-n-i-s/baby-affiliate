@@ -1,1 +1,26 @@
-{{id}}
+{% extends "base.html" %}
+{% block title %}| {{product.name}} {% endblock title %}
+{% block body %}
+<div class="row">
+    <div class="col-lg-6 ">
+
+        <img class="card-img-left justify-content-center" style="max-height:70vh;" src="{{product.image_url}}" alt="{{product.name}}">
+    </div>
+    <div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <h6 class="card-title">Price: {{product.price}} &#2547;</h6>
+  
+        <h6 class="card-title">Affiliate URL: <a href="{{product.affiliate_url}}">{{product.affiliate_url}}</a></h6>
+    </div>
+</div>
+
+</div>
+<div class="card mt-5" style="border:none;">
+    <p class="card-text">
+    {{product.detail}}
+    </p>
+</div>
+
+{% endblock body %}

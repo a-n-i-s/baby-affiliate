@@ -4,7 +4,7 @@ from django.urls import reverse
 # Create your models here.
 
 class Product(models.Model):
-    name = models.CharField("name", max_length=50)
+    name = models.CharField("name", max_length=500)
     detail = models.TextField("detail")
     price = models.DecimalField("price", max_digits=5, decimal_places=2)
     affiliate_url = models.URLField("affiliate url", max_length=200)
