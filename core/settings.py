@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-65l!@7u#bk)2^oel9(8*oplfih#rq)gnkc7ku)2$5*5i2!l7r!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://baby-affiliate.onrender.com']
+ALLOWED_HOSTS = ['baby-affiliate.onrender.com']
 
 
 # Application definition
